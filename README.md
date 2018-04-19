@@ -36,7 +36,7 @@ An example application is available at https://github.com/darryncampbell/plugin-
 
 ## Integration with Square POS Android App
     
-    plugins.intentShim.startActivityForResult({action: "com.squareup.register.action.CHARGE", package: "com.squareup", scheme:"square-commerce-v1",
+    plugins.intentShim.startActivityForResult({action: "com.squareup.register.action.CHARGE", package: "com.squareup",
                                           extras: {
                                           'com.squareup.pos.API_VERSION': "v1.3", 
                                           'com.squareup.pos.CLIENT_ID': "your_client_id",
