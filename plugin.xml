@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com-darryncampbell-cordova-plugin-intent" version="1.0.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.androcordov.com/apk/res/android">
-    <name>Intent Shim</name>
+<plugin id="com-folio3-cordova-plugin-square-pos-android" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.androcordov.com/apk/res/android">
+    <name>Square POS Android</name>
     <js-module name="IntentShim" src="www/IntentShim.js">
         <clobbers target="intentShim" />
     </js-module>
