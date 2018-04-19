@@ -425,6 +425,8 @@ public class IntentShim extends CordovaPlugin {
             Object value = extrasMap.get(key);
             String valueStr = String.valueOf(value);
             // If type is text html, the extra text must sent as HTML
+            Log.d(LOG_TAG, "Extra Key Param: " + key + "  - and value: " + valueStr);
+
             if (key.equals(Intent.EXTRA_TEXT) && type.equals("text/html")) {
                 i.putExtra(key, Html.fromHtml(valueStr));
             } else if (key.equals(Intent.EXTRA_STREAM)) {
@@ -444,6 +446,9 @@ public class IntentShim extends CordovaPlugin {
             } else if (key.equals(Intent.EXTRA_EMAIL)) {
                 // allows to add the email address of the receiver
                 i.putExtra(Intent.EXTRA_EMAIL, new String[] { valueStr });
+            } else if(key.equals("com.squareup.pos.TENDER_TYPES")) {
+                i.putExtra(key, new ArrayList<String>(Arrays.asList(valueStr.split("\\s*,\\s*"))) );
+                Log.d(LOG_TAG, "Added ArrayList<String> to the extras" );
             } else {
                 if (value instanceof Boolean) {
                     i.putExtra(key, Boolean.valueOf(valueStr));
