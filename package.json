@@ -1,23 +1,23 @@
 {
-  "name": "com-darryncampbell-cordova-plugin-intent",
-  "version": "1.0.2",
+  "name": "com-folio3-cordova-plugin-square-pos-android",
+  "version": "1.0.0",
   "description": "General purpose intent shim layer for cordova appliations on Android.  Handles various techniques for sending and receiving intents.",
   "main": "intentShim.js",
   "cordova": {
-    "id": "com-darryncampbell-cordova-plugin-intent",
+    "id": "com-folio3-cordova-plugin-square-pos-android",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/darryncampbell/darryncampbell-cordova-plugin-intent.git"
+    "url": "https://github.com/folio3/cordova-plugin-square-pos-android.git"
   },
   "keywords": [
     "ecosystem:cordova",
 	"cordova-android",
-    "Intent"
+    "square-pos"
   ],
-  "author": "Darryn Campbell",
+  "author": "Folio3",
   "license": "MIT"
 }
